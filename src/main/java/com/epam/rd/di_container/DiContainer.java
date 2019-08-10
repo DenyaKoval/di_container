@@ -2,6 +2,7 @@ package com.epam.rd.di_container;
 
 import com.epam.rd.define_bean.BeanDefinition;
 import com.epam.rd.define_bean.ParameterType;
+import com.epam.rd.exception.ContainerException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -45,7 +46,7 @@ public class DiContainer {
             logger.info("Created bean {}", object);
             return object;
         } catch (Exception ex) {
-            throw new RuntimeException(ex);
+            throw new ContainerException(ex);
         }
     }
 
