@@ -4,6 +4,7 @@ public class Car {
 
     public final String manufacturer;
     public final Engine engine;
+    public final int year = 2015;
 
     public Car(String manufacturer, Engine engine) {
         this.manufacturer = manufacturer;
